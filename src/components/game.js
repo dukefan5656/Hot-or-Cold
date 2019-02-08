@@ -23,15 +23,10 @@ export default class Game extends React.Component {
   }
 
   makeGuess(guess) {
-    guess = parseInt(guess, 10);
-    if (isNaN(guess)) {
-      this.setState({ feedback: 'Please enter a valid number' });
-      return;
-    }
-
-    const difference = Math.abs(guess - this.state.correctAnswer);
-
     let feedback;
+    const difference = Math.abs(guess - this.state.correctAnswer);
+    
+
     if (difference >= 50) {
       feedback = 'You\'re Ice Cold...';
     } else if (difference >= 30) {
@@ -62,7 +57,7 @@ export default class Game extends React.Component {
         <Header
           onRestartGame={() => this.restartGame()}
         />
-        <main role="main">
+        <main>
           <GuessSection
             feedback={feedback}
             guessCount={guessCount}

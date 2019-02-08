@@ -5,7 +5,7 @@ import GuessCount from './guess-count';
 
 
 export default function StatusSection(props) {
-  const { guesses} = props;
+  const {guesses} = props;
   const guessCount = guesses.length;
 
   return (
