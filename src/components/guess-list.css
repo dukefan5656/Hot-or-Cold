@@ -1,7 +1,7 @@
 ul.guessBox {
   height: 80px;
   margin: 10px auto 0;
-  background: #11a8ab;
+  background: white;
   padding: 0.5em;
   display: block;
   line-height: 2em;
@@ -10,10 +10,8 @@ ul.guessBox {
 }
 ul.guessBox li {
   display: inline;
-  background-color: #1a4e95;
+  background-color: steelblue;
   padding: 0.3em;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   margin: 0.2em;
   color: #fff;
